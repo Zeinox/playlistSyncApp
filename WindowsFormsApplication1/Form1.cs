@@ -34,13 +34,15 @@ namespace WindowsFormsApplication1
         void Form_DragDrop(object sender, DragEventArgs e)
         {
             string[] FileList = (string[])e.Data.GetData(DataFormats.FileDrop, false);
-
-            string fileExt= Path.GetExtension(FileList[0]);
-         
-            
-            if (validFileExtensions.Contains(fileExt))
+            for (int i = 0; i < FileList.Length; ++i)
             {
-                playList.Items.Add(FileList[0]);
+                string fileExt = Path.GetExtension(FileList[i]);
+
+
+                if (validFileExtensions.Contains(fileExt))
+                {
+                    playList.Items.Add(FileList[i]);
+                }
             }
             //more processing
         }
