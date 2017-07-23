@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        public string[] validFileExtensions = { ".mp3", ".wav", ".aa", ".aiff", ".flac", ".wma" };
+
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +33,14 @@ namespace WindowsFormsApplication1
         void Form_DragDrop(object sender, DragEventArgs e)
         {
             string[] FileList = (string[])e.Data.GetData(DataFormats.FileDrop, false);
-            playList.Items.Add(FileList.ToString());
+
+            string fileExt= Path.GetExtension(FileList[0]);
+         
+            
+            if (validFileExtensions.Contains(fileExt))
+            {
+                playList.Items.Add(FileList[0]);
+            }
             //more processing
         }
 

@@ -7,3 +7,12 @@ c:\users\michael walsh\documents\visual studio 2015\Projects\WindowsFormsApplica
 c:\users\michael walsh\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.exe
 c:\users\michael walsh\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.pdb
 c:\users\michael walsh\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe.config
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.exe
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.pdb
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\playlistSyncApp.csprojResolveAssemblyReference.cache
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\playlistSyncApp.csproj.GenerateResource.Cache

@@ -33,11 +33,12 @@
             // 
             // playList
             // 
+            this.playList.Dock = System.Windows.Forms.DockStyle.Left;
             this.playList.FormattingEnabled = true;
             this.playList.ItemHeight = 16;
-            this.playList.Location = new System.Drawing.Point(13, 13);
+            this.playList.Location = new System.Drawing.Point(0, 0);
             this.playList.Name = "playList";
-            this.playList.Size = new System.Drawing.Size(178, 228);
+            this.playList.Size = new System.Drawing.Size(542, 268);
             this.playList.TabIndex = 0;
             this.playList.SelectedIndexChanged += new System.EventHandler(this.playList_SelectedIndexChanged);
             // 
@@ -45,7 +46,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.ClientSize = new System.Drawing.Size(688, 268);
             this.Controls.Add(this.playList);
             this.Name = "Form1";
             this.Text = "Form1";
