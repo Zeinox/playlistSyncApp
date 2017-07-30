@@ -23,6 +23,7 @@ namespace WindowsFormsApplication1
         public Boolean newSong = false;
         public AxWindowsMediaPlayer Player;
         public WMPLib.IWMPPlaylist playlist;
+        public string dir;
 
         public Form1()
         {
@@ -33,6 +34,7 @@ namespace WindowsFormsApplication1
             this.DragDrop += new DragEventHandler(Form_DragDrop);
             Player = new AxWindowsMediaPlayer();
             Player.CreateControl();
+            dir = "C:\\0";
             //axMDocView1.CreateControl()
         }
 
@@ -161,6 +163,14 @@ namespace WindowsFormsApplication1
             if (playList.SelectedIndex > -1)
             {
                 playList.Items.RemoveAt(playList.SelectedIndex);
+            }
+        }
+
+        private void setMusicDir_Click(object sender, EventArgs e)
+        {
+            if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                dir = folderBrowserDialog1.SelectedPath;
             }
         }
     }
