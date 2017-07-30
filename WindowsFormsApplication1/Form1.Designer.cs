@@ -36,6 +36,7 @@
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.savePlaylist = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.namePlaylist = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,11 +99,20 @@
             this.importToolStripMenuItem.Text = "Import";
             this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
+            // namePlaylist
+            // 
+            this.namePlaylist.Location = new System.Drawing.Point(431, 0);
+            this.namePlaylist.Name = "namePlaylist";
+            this.namePlaylist.Size = new System.Drawing.Size(100, 22);
+            this.namePlaylist.TabIndex = 3;
+            this.namePlaylist.Text = "Playlist Name";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 268);
+            this.Controls.Add(this.namePlaylist);
             this.Controls.Add(this.playList);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -125,6 +135,7 @@
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog savePlaylist;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.TextBox namePlaylist;
     }
 }
 

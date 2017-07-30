@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AxWMPLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,19 +12,28 @@ using System.Windows.Forms;
 
 
 
+
+
+
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
         public string[] validFileExtensions = { ".mp3", ".wav", ".aa", ".aiff", ".flac", ".wma" };
         public Boolean newSong = false;
+        public AxWindowsMediaPlayer Player;
+        public WMPLib.IWMPPlaylist playlist;
 
         public Form1()
         {
             InitializeComponent();
+            
             this.AllowDrop = true;
             this.DragEnter += new DragEventHandler(Form_DragEnter);
             this.DragDrop += new DragEventHandler(Form_DragDrop);
+            Player = new AxWindowsMediaPlayer();
+            Player.CreateControl();
+            //axMDocView1.CreateControl()
         }
 
         void Form_DragEnter(object sender, DragEventArgs e)
@@ -130,7 +140,20 @@ namespace WindowsFormsApplication1
 
         private void importToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            if (playList.Items.Count > 0)
+            {
+                string[] songsArray = playList.Items.OfType<string>().ToArray();
+
+                playlist = Player.playlistCollection.newPlaylist(namePlaylist.Text);
+
+                foreach (string song in songsArray)
+                {
+                    playlist.appendItem(Player.newMedia(song));
+                }
+            }
+            
+          
+
         }
     }
 }

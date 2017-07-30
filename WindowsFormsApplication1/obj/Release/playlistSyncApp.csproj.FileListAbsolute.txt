@@ -16,3 +16,9 @@ C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1
 C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Form1.resources
 C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\playlistSyncApp.csproj.GenerateResource.Cache
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\Interop.MediaPlayer.dll
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\playlistSyncApp.csproj.ResolveComReference.cache
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\bin\Release\Interop.WMPLib.dll
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\bin\Release\AxInterop.WMPLib.dll
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\Interop.WMPLib.dll
+C:\Users\Michael Walsh\Documents\GitHub\playlistSyncApp\WindowsFormsApplication1\obj\Release\AxInterop.WMPLib.dll
