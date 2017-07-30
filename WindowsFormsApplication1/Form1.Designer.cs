@@ -37,6 +37,7 @@
             this.savePlaylist = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.namePlaylist = new System.Windows.Forms.TextBox();
+            this.removeButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,11 +108,22 @@
             this.namePlaylist.TabIndex = 3;
             this.namePlaylist.Text = "Playlist Name";
             // 
+            // removeButton
+            // 
+            this.removeButton.Location = new System.Drawing.Point(350, -1);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(75, 23);
+            this.removeButton.TabIndex = 4;
+            this.removeButton.Text = "Remove";
+            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 268);
+            this.Controls.Add(this.removeButton);
             this.Controls.Add(this.namePlaylist);
             this.Controls.Add(this.playList);
             this.Controls.Add(this.menuStrip1);
@@ -136,6 +148,7 @@
         private System.Windows.Forms.SaveFileDialog savePlaylist;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.TextBox namePlaylist;
+        private System.Windows.Forms.Button removeButton;
     }
 }
 
