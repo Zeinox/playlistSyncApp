@@ -93,5 +93,44 @@ namespace WindowsFormsApplication1
 
         }
         
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string[] songsArray = playList.Items.OfType<string>().ToArray();
+            try
+            {
+                savePlaylist.InitialDirectory = Directory.GetCurrentDirectory();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("The process faile: {0}", ex.ToString());
+            }
+
+            savePlaylist.Title = "Save Playlist";
+            savePlaylist.FileName = "";
+            savePlaylist.Filter = "Playlist|*.m3u|All Files|*.*";
+
+            if(savePlaylist.ShowDialog()!= DialogResult.Cancel)
+            {
+              
+                System.IO.File.WriteAllLines(Path.GetFullPath(savePlaylist.FileName), songsArray);
+                
+                //System.IO.File.WriteAllLines()
+            }
+        }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void importToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
